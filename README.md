@@ -131,7 +131,7 @@ In our Python environment we install `jupyterlab_latex`
 
 ```
 pip install jupyterlab_latex
-sudo apt install nodejs npm
+sudo apt install nodejs npm pandoc
 jupyter labextension install @jupyterlab/latex
 jupyter labextension install @jupyterlab/toc
 ```
