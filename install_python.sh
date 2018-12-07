@@ -1,6 +1,6 @@
 #!/bin/sh
 
-v=3.7.0
+v=3.7.1
 
 sudo apt update
 sudo apt install -y --no-install-recommends \
