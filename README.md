@@ -32,46 +32,15 @@ JupyterLab offers a notebook, terminal, text editor, file browser, rich outputs 
 ## Python installation :snake:
 
 We consider working with the most recent
-[Python](https://www.python.org/downloads/) version
-that at this time (september, 2018) is `3.7.0`.
+[Python](https://www.python.org/downloads/) version.
 
 If you prefer to work with the Python version of your system it is not necessary to perform the next steps.
 
 For Linux it is necessary build and install Python from sources.
 
-The following instructions install the necessary packages to compile the python specified version from the downloaded sources for later installation.
+The instructions in [install_python.sh](install_python.sh) install the necessary packages to compile the python specified version from the downloaded sources for later installation.
 
-```
-sudo apt update
-
-v=3.7.0
-
-sudo apt install -y --no-install-recommends \
-gcc \
-libbz2-dev \
-libffi-dev \
-libgdbm-dev \
-liblzma-dev \
-libncursesw5-dev \
-libreadline-dev \
-libsqlite3-dev \
-libssl-dev \
-tk-dev \
-uuid-dev
-
-wget https://www.python.org/ftp/python/$v/Python-$v.tar.xz
-tar -xf ./Python-$v.tar.xz
-cd Python-$v
-./configure
-make -j $(nproc)
-sudo make altinstall
-cd ..
-rm ./Python-$v.tar.xz
-sudo rm -rf ./Python-$v
-```
-
-The 
-[install_python.sh](install_python.sh) script contains the above instructions, you can execute it with the following instruction :wink:.
+You can execute it with the following instruction :wink:.
 
 ```
 wget https://raw.githubusercontent.com/ITTcs/jupyterlab_setup/master/install_python.sh && chmod 755 ./install_python.sh && ./install_python.sh && rm ./install_python.sh
