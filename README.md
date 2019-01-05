@@ -43,7 +43,7 @@ The instructions in [install_python.sh](install_python.sh) install the necessary
 You can execute it with the following instruction :wink:.
 
 ```
-wget https://raw.githubusercontent.com/ITTcs/jupyterlab_setup/master/install_python && chmod +x ./install_python && ./install_python 3.7.1 && rm ./install_python
+wget https://raw.githubusercontent.com/ITTcs/jupyterlab_setup/master/install_python && chmod +x ./install_python && ./install_python 3.7.2 && rm ./install_python
 ```
 
 ### Virtualenv Installation
